@@ -58,6 +58,8 @@ document.getElementById("clientInput").value.toLowerCase();
     "- problème infrastructure</p>";
 
   }
+  
+  setTimeout(() => {
 
   document.getElementById("resultat").innerHTML =
   analyse;

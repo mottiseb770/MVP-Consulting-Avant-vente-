@@ -63,4 +63,5 @@ document.getElementById("clientInput").value.toLowerCase();
 
   document.getElementById("resultat").innerHTML =
   analyse;
+  }, 1500);
 }

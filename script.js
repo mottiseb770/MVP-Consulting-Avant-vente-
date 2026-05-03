@@ -1,5 +1,7 @@
 function analyser() {
-
+  
+document.getElementById("resultat").innerHTML =
+"<p>⏳ Analyse IA en cours...</p>";
   const input =
 document.getElementById("clientInput").value.toLowerCase();
 

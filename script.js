@@ -8,13 +8,16 @@ document.getElementById("clientInput").value.toLowerCase();
   if (input.includes("vpn")) {
 
     analyse =
-    "<h2>Analyse VPN</h2>" +
+    "<h2 style='color:red;'>🔴 Incident VPN Critique</h2>" +
+
+    "<p><strong>Criticité :</strong> ÉLEVÉE</p>" +
+
     "<p><strong>Hypothèses :</strong><br>" +
     "- problème accès distant<br>" +
     "- problème MFA<br>" +
     "- problème firewall</p>" +
 
-    "<p><strong>Actions :</strong><br>" +
+    "<p><strong>Actions recommandées :</strong><br>" +
     "- vérifier logs VPN<br>" +
     "- vérifier authentification MFA<br>" +
     "- vérifier règles firewall</p>";
@@ -24,13 +27,16 @@ document.getElementById("clientInput").value.toLowerCase();
   else if (input.includes("serveur")) {
 
     analyse =
-    "<h2>Analyse Serveur</h2>" +
+    "<h2 style='color:orange;'>🟠 Incident Serveur</h2>" +
+
+    "<p><strong>Criticité :</strong> MOYENNE</p>" +
+
     "<p><strong>Hypothèses :</strong><br>" +
     "- saturation CPU<br>" +
     "- saturation RAM<br>" +
     "- problème applicatif</p>" +
 
-    "<p><strong>Actions :</strong><br>" +
+    "<p><strong>Actions recommandées :</strong><br>" +
     "- vérifier monitoring<br>" +
     "- vérifier charge serveur<br>" +
     "- vérifier services Windows/Linux</p>";
@@ -40,7 +46,10 @@ document.getElementById("clientInput").value.toLowerCase();
   else {
 
     analyse =
-    "<h2>Analyse Générale</h2>" +
+    "<h2 style='color:green;'>🟢 Analyse Générale</h2>" +
+
+    "<p><strong>Criticité :</strong> FAIBLE</p>" +
+
     "<p><strong>Hypothèses :</strong><br>" +
     "- problème réseau<br>" +
     "- problème sécurité<br>" +
